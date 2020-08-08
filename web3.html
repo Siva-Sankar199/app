@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="date.html" metho="post" onsubmit="return fun()">
+	<input type="name" name="email" id="email">
+	<input type="submit" value="vlidate email">
+   </form>
+   <script type="text/javascript">
+   	    function fun(){
+   	    	var a=document.getElementById('email').value;
+   	    	var atrate=a.indexOf("@");
+   	    	var  dot=a.indexOf(".");
+   	    	
+
+   	    	
+
+   	    	if (atrate<2 || dot<atrate+2 || dot+2>=a.length) 
+   	    	{
+   	    		alert("invalid email");
+   	    		return false;
+   	    	}
+
+   	    }
+   </script>
+
+
+</body>
+</html>
